@@ -1,50 +1,70 @@
 @import "../../utils/colors";
-.login {
-  height: 100vh;
+/* index.scss */
+
+/* index.scss */
+
+body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-items: center;
-  form {
-    padding: 30px;
-    border-radius: 10px;
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    gap: 10px;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
-    h1 {
-      color: $primary_color;
-      text-align: center;
-    }
-    label {
-      color: $text_black;
-      font-weight: 500;
-    }
-    input {
-      padding: 5px;
-      border-radius: 5px;
-      outline: none;
-      border: 1px solid $text_black;
-      color: $text_black;
-    }
-    button {
-      background-color: $primary_color;
-      padding: 8px;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-    }
-    .error {
-      background-color: $light_pink;
-      color: $text_black;
-      text-align: center;
-      padding: 5px;
-      border-radius: 4px;
-    }
-  }
+  height: 100vh;
+  background-color: #f5f5f5; /* Set a background color */
 }
+
+.navigation {
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.login {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align form elements */
+}
+
+.login label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
